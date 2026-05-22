@@ -1,263 +1,200 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-lang="zh">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Codex 工作台隐私政策</title>
-  <meta name="description" content="Codex 工作台隐私政策。">
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #1b1b1f;
-      --muted: #5f6368;
-      --line: #d7dde6;
-      --paper: #fffdf8;
-      --wash: #f3f0e8;
-      --accent: #0f766e;
-      --accent-soft: #d7f2ed;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
-      line-height: 1.78;
-      color: var(--ink);
-      background: var(--wash);
-    }
-
-    main {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 38px 0 72px;
-    }
-
-    article {
-      padding: clamp(24px, 6vw, 58px);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--paper);
-      box-shadow: 0 20px 70px rgba(31, 41, 55, 0.1);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 4px;
-    }
-
-    .back {
-      display: inline-flex;
-      margin-bottom: 24px;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    h1,
-    h2 {
-      font-family: "Noto Serif SC", "Songti SC", serif;
-      line-height: 1.25;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(30px, 5vw, 44px);
-    }
-
-    h2 {
-      margin: 34px 0 10px;
-      padding-top: 20px;
-      border-top: 1px solid var(--line);
-      font-size: 22px;
-    }
-
-    p,
-    li {
-      color: #30343b;
-      font-size: 16px;
-    }
-
-    .lead {
-      color: var(--muted);
-      font-size: 17px;
-    }
-
-    .meta {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px 22px;
-      margin: 26px 0 30px;
-      padding: 18px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #ffffff;
-    }
-
-    .meta span {
-      display: block;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .meta strong {
-      display: block;
-      margin-top: 2px;
-    }
-
-    table {
-      width: 100%;
-      margin: 16px 0 6px;
-      border-collapse: collapse;
-      overflow-wrap: anywhere;
-      background: #ffffff;
-    }
-
-    th,
-    td {
-      padding: 12px;
-      border: 1px solid var(--line);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: var(--accent-soft);
-      color: #123f3a;
-    }
-
-    @media (max-width: 720px) {
-      main {
-        width: min(100% - 20px, 920px);
-        padding-top: 20px;
-      }
-
-      article {
-        padding: 22px;
-      }
-
-      .meta {
-        grid-template-columns: 1fr;
-      }
-
-      table,
-      thead,
-      tbody,
-      tr,
-      th,
-      td {
-        display: block;
-      }
-
-      th {
-        display: none;
-      }
-
-      td {
-        border-top: 0;
-      }
-
-      td:first-child {
-        border-top: 1px solid var(--line);
-        font-weight: 700;
-        color: var(--accent);
-      }
-    }
-  </style>
+  <title>Codex 工作台隐私政策 | Codex Workbench Privacy Policy</title>
+  <meta name="description" content="Codex 工作台隐私政策。Codex Workbench Privacy Policy.">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("codexworkbench.lang");
+        var lang = saved || (((navigator.language || "").toLowerCase().indexOf("zh") === 0) ? "zh" : "en");
+        document.documentElement.dataset.lang = lang === "en" ? "en" : "zh";
+        document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="./assets/lang.js" defer></script>
 </head>
 <body>
   <main>
     <article>
-      <a class="back" href="./index.html">返回合规文档首页</a>
-      <h1>Codex 工作台隐私政策</h1>
-      <p class="lead">本隐私政策说明 Codex 工作台如何处理与应用功能有关的信息。请在使用本应用前仔细阅读并确认理解。</p>
+      <div class="topbar">
+        <a class="back" href="./index.html">
+          <span class="lang lang-zh">返回合规文档首页</span>
+          <span class="lang lang-en">Back to legal documents</span>
+        </a>
+        <div class="language-switch" aria-label="Language switch">
+          <button type="button" data-lang-toggle="zh" aria-pressed="true">中文</button>
+          <button type="button" data-lang-toggle="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
 
-      <section class="meta" aria-label="基本信息">
+      <div class="lang lang-zh">
+        <h1>Codex 工作台隐私政策</h1>
+        <p class="lead">本隐私政策说明 Codex 工作台如何处理与应用功能有关的信息。请在使用本应用前仔细阅读并确认理解。</p>
+      </div>
+
+      <div class="lang lang-en">
+        <h1>Codex Workbench Privacy Policy</h1>
+        <p class="lead">This Privacy Policy explains how Codex Workbench handles information related to app features. Please read and understand it before using the app.</p>
+      </div>
+
+      <section class="meta" aria-label="Basic information">
         <div>
-          <span>应用名称</span>
-          <strong>Codex 工作台</strong>
+          <span class="lang lang-zh">应用名称</span>
+          <span class="lang lang-en">App name</span>
+          <strong>Codex 工作台 / Codex Workbench</strong>
         </div>
         <div>
-          <span>包名</span>
+          <span class="lang lang-zh">包名</span>
+          <span class="lang lang-en">Package name</span>
           <strong>com.xmgod.codexworkbench</strong>
         </div>
         <div>
-          <span>版本</span>
+          <span class="lang lang-zh">版本</span>
+          <span class="lang lang-en">Version</span>
           <strong>1.0.0</strong>
         </div>
         <div>
-          <span>生效日期</span>
-          <strong>2026 年 5 月 22 日</strong>
+          <span class="lang lang-zh">生效日期</span>
+          <span class="lang lang-en">Effective date</span>
+          <strong>2026-05-22</strong>
         </div>
         <div>
-          <span>联系邮箱</span>
+          <span class="lang lang-zh">联系邮箱</span>
+          <span class="lang lang-en">Contact email</span>
           <strong>tomkuku588@gmail.com</strong>
         </div>
       </section>
 
-      <h2>一、应用定位</h2>
-      <p>Codex 工作台是一款面向普通 AI 用户和轻度开发者的本地 AI 任务工作台。应用用于帮助用户在设备本地管理 AI 任务、生成可复制的提示词、记录输出摘要、维护审查清单和归档任务结果。</p>
-      <p>当前版本不内置 AI 模型调用，不提供账号登录、云同步、在线模板下载、广告、统计 SDK 或第三方 AI 服务接入。</p>
+      <div class="lang lang-zh">
+        <h2>一、应用定位</h2>
+        <p>Codex 工作台是一款面向普通 AI 用户和轻度开发者的本地 AI 任务工作台。应用用于帮助用户在设备本地管理 AI 任务、生成可复制的提示词、记录输出摘要、维护审查清单和归档任务结果。</p>
+        <p>当前版本不内置 AI 模型调用，不提供账号登录、云同步、在线模板下载、广告、统计 SDK 或第三方 AI 服务接入。</p>
 
-      <h2>二、我们如何处理信息</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>信息类型</th>
-            <th>处理情况</th>
-            <th>用途</th>
-            <th>存储位置</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>账号信息</td>
-            <td>不处理</td>
-            <td>本应用当前不提供注册、登录或账号体系。</td>
-            <td>不适用</td>
-          </tr>
-          <tr>
-            <td>设备与身份标识</td>
-            <td>不主动收集</td>
-            <td>本应用不主动收集设备唯一标识、定位、通讯录、传感器等信息。</td>
-            <td>不适用</td>
-          </tr>
-          <tr>
-            <td>本地业务数据</td>
-            <td>本地处理</td>
-            <td>保存用户创建的任务标题、目标、场景、上下文、提示词、输出摘要、审查记录、标签和模板使用状态。</td>
-            <td>仅保存在用户设备本地</td>
-          </tr>
-          <tr>
-            <td>网络数据</td>
-            <td>不上传</td>
-            <td>当前版本不向开发者服务器上传数据，不请求 AI 服务，不进行云同步。</td>
-            <td>不适用</td>
-          </tr>
-        </tbody>
-      </table>
+        <h2>二、我们如何处理信息</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>信息类型</th>
+              <th>处理情况</th>
+              <th>用途</th>
+              <th>存储位置</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>账号信息</td>
+              <td>不处理</td>
+              <td>本应用当前不提供注册、登录或账号体系。</td>
+              <td>不适用</td>
+            </tr>
+            <tr>
+              <td>设备与身份标识</td>
+              <td>不主动收集</td>
+              <td>本应用不主动收集设备唯一标识、定位、通讯录、传感器等信息。</td>
+              <td>不适用</td>
+            </tr>
+            <tr>
+              <td>本地业务数据</td>
+              <td>本地处理</td>
+              <td>保存用户创建的任务标题、目标、场景、上下文、提示词、输出摘要、审查记录、标签和模板使用状态。</td>
+              <td>仅保存在用户设备本地</td>
+            </tr>
+            <tr>
+              <td>网络数据</td>
+              <td>不上传</td>
+              <td>当前版本不向开发者服务器上传数据，不请求 AI 服务，不进行云同步。</td>
+              <td>不适用</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h2>三、权限说明</h2>
-      <p>当前版本不申请通讯录、定位、相机、麦克风、相册、日历、通知或文件读写等敏感权限。用户主动点击复制按钮时，应用可能调用系统剪贴板能力，以便将提示词或文本内容复制到用户指定的外部工具中。</p>
+        <h2>三、权限说明</h2>
+        <p>当前版本不申请通讯录、定位、相机、麦克风、相册、日历、通知或文件读写等敏感权限。用户主动点击复制按钮时，应用可能调用系统剪贴板能力，以便将提示词或文本内容复制到用户指定的外部工具中。</p>
 
-      <h2>四、数据保存与删除</h2>
-      <p>任务、模板使用记录、输出摘要和审查归档记录仅保存在用户设备本地。用户可以通过系统的清除应用数据能力或卸载应用删除本地数据。卸载后，本应用本地保存的数据将随应用数据一并移除。</p>
-      <p>如用户将提示词、摘要或其他内容复制到第三方工具、聊天软件、云笔记或外部 AI 服务中，相关数据处理将由用户选择的第三方服务规则约束。</p>
+        <h2>四、数据保存与删除</h2>
+        <p>任务、模板使用记录、输出摘要和审查归档记录仅保存在用户设备本地。用户可以通过系统的清除应用数据能力或卸载应用删除本地数据。卸载后，本应用本地保存的数据将随应用数据一并移除。</p>
+        <p>如用户将提示词、摘要或其他内容复制到第三方工具、聊天软件、云笔记或外部 AI 服务中，相关数据处理将由用户选择的第三方服务规则约束。</p>
 
-      <h2>五、第三方服务</h2>
-      <p>当前版本不接入第三方 AI 服务、统计 SDK、广告 SDK、支付 SDK 或云同步服务。若后续版本新增联网能力、第三方服务或敏感权限，我们将更新本隐私政策，并在使用前通过应用内提示或其他合理方式告知用户。</p>
+        <h2>五、第三方服务</h2>
+        <p>当前版本不接入第三方 AI 服务、统计 SDK、广告 SDK、支付 SDK 或云同步服务。若后续版本新增联网能力、第三方服务或敏感权限，我们将更新本隐私政策，并在使用前通过应用内提示或其他合理方式告知用户。</p>
 
-      <h2>六、未成年人保护</h2>
-      <p>本应用不专门面向未成年人提供服务。未成年人使用本应用前，应在监护人指导下阅读并理解本隐私政策和用户协议。</p>
+        <h2>六、未成年人保护</h2>
+        <p>本应用不专门面向未成年人提供服务。未成年人使用本应用前，应在监护人指导下阅读并理解本隐私政策和用户协议。</p>
 
-      <h2>七、用户权利</h2>
-      <p>由于当前版本数据主要保存在用户设备本地，用户可以通过应用内功能、系统清除数据或卸载应用的方式管理和删除本地数据。如对隐私政策或数据处理方式有疑问，可以通过本政策列明的邮箱联系我们。</p>
+        <h2>七、用户权利</h2>
+        <p>由于当前版本数据主要保存在用户设备本地，用户可以通过应用内功能、系统清除数据或卸载应用的方式管理和删除本地数据。如对隐私政策或数据处理方式有疑问，可以通过本政策列明的邮箱联系我们。</p>
 
-      <h2>八、政策变更与联系</h2>
-      <p>我们可能根据应用功能变化更新本隐私政策。更新后将以页面发布日期或应用内提示为准。若您对本隐私政策有任何疑问、意见或请求，请通过邮箱 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a> 联系我们。</p>
+        <h2>八、政策变更与联系</h2>
+        <p>我们可能根据应用功能变化更新本隐私政策。更新后将以页面发布日期或应用内提示为准。若您对本隐私政策有任何疑问、意见或请求，请通过邮箱 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a> 联系我们。</p>
+      </div>
+
+      <div class="lang lang-en">
+        <h2>1. App Positioning</h2>
+        <p>Codex Workbench is a local AI task workspace for everyday AI users and lightweight developers. It helps users manage AI tasks on their own device, create copyable prompts, record output summaries, maintain review checklists, and archive task results.</p>
+        <p>The current version does not include built-in AI model calls, account login, cloud sync, online template downloads, advertisements, analytics SDKs, or third-party AI service integrations.</p>
+
+        <h2>2. How We Handle Information</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Information type</th>
+              <th>Handling</th>
+              <th>Purpose</th>
+              <th>Storage location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Account information</td>
+              <td>Not processed</td>
+              <td>The app currently does not provide registration, login, or account features.</td>
+              <td>Not applicable</td>
+            </tr>
+            <tr>
+              <td>Device and identity identifiers</td>
+              <td>Not actively collected</td>
+              <td>The app does not actively collect unique device identifiers, location, contacts, sensor data, or similar information.</td>
+              <td>Not applicable</td>
+            </tr>
+            <tr>
+              <td>Local business data</td>
+              <td>Processed locally</td>
+              <td>Stores task titles, goals, scenarios, context, prompts, output summaries, review records, tags, and template usage status created by the user.</td>
+              <td>Only on the user's device</td>
+            </tr>
+            <tr>
+              <td>Network data</td>
+              <td>Not uploaded</td>
+              <td>The current version does not upload data to developer servers, request AI services, or perform cloud sync.</td>
+              <td>Not applicable</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>3. Permissions</h2>
+        <p>The current version does not request sensitive permissions such as contacts, location, camera, microphone, photos, calendar, notifications, or file read/write access. When the user taps a copy button, the app may use the system clipboard so the user can paste prompts or text into an external tool of their choice.</p>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Tasks, template usage records, output summaries, and review archives are stored only on the user's device. Users may delete local data through system app data clearing or by uninstalling the app. After uninstallation, local data stored by the app will be removed together with the app data.</p>
+        <p>If the user copies prompts, summaries, or other content into third-party tools, chat apps, cloud notes, or external AI services, the related processing will be governed by the rules of the third-party service chosen by the user.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <p>The current version does not integrate third-party AI services, analytics SDKs, advertising SDKs, payment SDKs, or cloud sync services. If a future version adds network features, third-party services, or sensitive permissions, we will update this Privacy Policy and notify users in the app or by other reasonable means before use.</p>
+
+        <h2>6. Minors</h2>
+        <p>This app is not specifically directed to minors. Minors should read and understand this Privacy Policy and the User Agreement under guardian guidance before using the app.</p>
+
+        <h2>7. User Rights</h2>
+        <p>Because the current version mainly stores data locally on the user's device, users may manage and delete local data through in-app features, system data clearing, or app uninstallation. For questions about this Privacy Policy or data handling, contact us using the email listed here.</p>
+
+        <h2>8. Policy Changes and Contact</h2>
+        <p>We may update this Privacy Policy as app features change. Updates will take effect based on the page publication date or in-app notice. If you have questions, feedback, or requests about this Privacy Policy, contact us at <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>.</p>
+      </div>
     </article>
   </main>
 </body>
