@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex 工作台用户协议</title>
+  <meta name="description" content="Codex 工作台用户协议。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1b1b1f;
+      --muted: #5f6368;
+      --line: #d7dde6;
+      --paper: #fffdf8;
+      --wash: #f3f0e8;
+      --accent: #0f766e;
+      --accent-soft: #d7f2ed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+      line-height: 1.78;
+      color: var(--ink);
+      background: var(--wash);
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 38px 0 72px;
+    }
+
+    article {
+      padding: clamp(24px, 6vw, 58px);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 20px 70px rgba(31, 41, 55, 0.1);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .back {
+      display: inline-flex;
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    h1,
+    h2 {
+      font-family: "Noto Serif SC", "Songti SC", serif;
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    h2 {
+      margin: 34px 0 10px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      color: #30343b;
+      font-size: 16px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 22px;
+      margin: 26px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .meta strong {
+      display: block;
+      margin-top: 2px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 20px, 920px);
+        padding-top: 20px;
+      }
+
+      article {
+        padding: 22px;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <a class="back" href="./index.html">返回合规文档首页</a>
+      <h1>Codex 工作台用户协议</h1>
+      <p class="lead">欢迎使用 Codex 工作台。请您在使用前仔细阅读本协议。您开始使用本应用，即表示您已阅读、理解并同意本协议内容。</p>
+
+      <section class="meta" aria-label="基本信息">
+        <div>
+          <span>应用名称</span>
+          <strong>Codex 工作台</strong>
+        </div>
+        <div>
+          <span>包名</span>
+          <strong>com.xmgod.codexworkbench</strong>
+        </div>
+        <div>
+          <span>版本</span>
+          <strong>1.0.0</strong>
+        </div>
+        <div>
+          <span>生效日期</span>
+          <strong>2026 年 5 月 22 日</strong>
+        </div>
+        <div>
+          <span>联系邮箱</span>
+          <strong>tomkuku588@gmail.com</strong>
+        </div>
+      </section>
+
+      <h2>一、服务内容</h2>
+      <p>Codex 工作台提供本地 AI 任务管理能力，包括任务卡片、本地模板、提示词生成与复制、输出摘要记录、审查清单、任务归档、历史归档和设置入口等功能。</p>
+
+      <h2>二、服务边界</h2>
+      <p>本应用不内置 AI 模型调用，不提供 OpenAI、Codex 或其他第三方 AI 服务的账号登录、接口调用、云同步、在线模板市场或付费模板。本应用不是 Codex 官方客户端，也不代表任何第三方 AI 服务。</p>
+
+      <h2>三、用户责任</h2>
+      <ul>
+        <li>用户应自行确认复制到外部 AI 工具的提示词内容、输出结果和后续使用风险。</li>
+        <li>用户不得利用本应用从事违法违规活动，不得记录、生成、传播或处理侵犯他人合法权益的内容。</li>
+        <li>用户应自行判断外部 AI 服务的使用条款、隐私政策、输出准确性和合规风险。</li>
+      </ul>
+
+      <h2>四、本地数据与备份</h2>
+      <p>本应用的数据主要保存在用户设备本地。用户应自行负责重要任务记录、提示词、摘要和审查归档的备份。因用户误操作、卸载、系统清理、设备故障或其他非本应用可控制原因导致的数据丢失，由用户自行承担相应风险。</p>
+
+      <h2>五、功能限制</h2>
+      <p>当前版本重点覆盖本地任务闭环，不承诺云端同步、跨设备同步、AI 自动执行、在线内容更新、第三方平台结果准确性或长期数据备份能力。应用功能可能随版本迭代进行调整。</p>
+
+      <h2>六、知识产权</h2>
+      <p>本应用中的界面、文案、模板结构和功能设计受相关法律保护。用户在应用中自行输入、整理或生成的任务内容归用户自行享有相应权利，但用户应确保其内容来源和使用方式合法合规。</p>
+
+      <h2>七、免责声明</h2>
+      <p>本应用仅作为本地任务管理与提示词整理工具，不对用户复制到外部工具后的处理结果、外部 AI 输出内容、第三方服务可用性或第三方服务引起的损失承担责任。用户应对自身使用行为和决策结果负责。</p>
+
+      <h2>八、协议变更与终止</h2>
+      <p>如后续版本增加联网、账号、云同步、权限或第三方服务能力，我们将同步更新本协议和隐私政策。用户不同意更新内容时，可以停止使用或卸载本应用。</p>
+
+      <h2>九、联系方式</h2>
+      <p>如您对本协议有任何疑问、意见或请求，请通过邮箱 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a> 联系我们。</p>
+    </article>
+  </main>
+</body>
+</html>

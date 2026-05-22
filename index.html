@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex 工作台合规文档</title>
+  <meta name="description" content="Codex 工作台隐私政策与用户协议入口。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1b1b1f;
+      --muted: #5f6368;
+      --line: #d7dde6;
+      --paper: #fffdf8;
+      --wash: #f3f0e8;
+      --accent: #0f766e;
+      --accent-soft: #d7f2ed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+      line-height: 1.75;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(15, 118, 110, 0.08) 1px, transparent 1px),
+        linear-gradient(rgba(15, 118, 110, 0.06) 1px, transparent 1px),
+        var(--wash);
+      background-size: 36px 36px;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .document {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 24px 80px rgba(31, 41, 55, 0.12);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 42px clamp(24px, 6vw, 56px) 34px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Noto Serif SC", "Songti SC", serif;
+      font-size: clamp(30px, 6vw, 52px);
+      line-height: 1.18;
+      font-weight: 700;
+    }
+
+    .summary {
+      margin: 18px 0 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .meta div {
+      padding: 16px clamp(20px, 5vw, 36px);
+      background: rgba(255, 253, 248, 0.92);
+    }
+
+    .meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .meta strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 16px;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      padding: clamp(24px, 5vw, 40px);
+    }
+
+    a {
+      display: block;
+      min-height: 154px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: inherit;
+      text-decoration: none;
+      background: #ffffff;
+      transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(15, 118, 110, 0.13);
+      outline: none;
+    }
+
+    a strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 21px;
+    }
+
+    a span {
+      display: block;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      padding: 0 clamp(24px, 6vw, 56px) 36px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0 40px;
+      }
+
+      .meta,
+      nav {
+        grid-template-columns: 1fr;
+      }
+
+      a {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="document" aria-labelledby="page-title">
+      <header>
+        <p class="eyebrow">Legal Documents</p>
+        <h1 id="page-title">Codex 工作台合规文档</h1>
+        <p class="summary">本页面用于公开展示 Codex 工作台的隐私政策与用户协议，供应用内展示、应用市场审核和用户查阅使用。</p>
+      </header>
+
+      <section class="meta" aria-label="应用信息">
+        <div>
+          <span>应用名称</span>
+          <strong>Codex 工作台</strong>
+        </div>
+        <div>
+          <span>包名</span>
+          <strong>com.xmgod.codexworkbench</strong>
+        </div>
+        <div>
+          <span>版本</span>
+          <strong>1.0.0</strong>
+        </div>
+        <div>
+          <span>联系邮箱</span>
+          <strong>tomkuku588@gmail.com</strong>
+        </div>
+      </section>
+
+      <nav aria-label="合规文档导航">
+        <a href="./privacy-policy.html">
+          <strong>隐私政策</strong>
+          <span>说明应用如何处理本地任务数据、权限、第三方服务、数据删除和联系方式。</span>
+        </a>
+        <a href="./user-agreement.html">
+          <strong>用户协议</strong>
+          <span>说明服务内容、使用边界、用户责任、本地数据风险和协议变更规则。</span>
+        </a>
+      </nav>
+
+      <footer>
+        <p>最后更新日期：2026 年 5 月 22 日</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
