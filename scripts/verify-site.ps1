@@ -2,9 +2,9 @@ $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
 $pages = @(
-  [pscustomobject]@{ Path = 'index.html'; En = 'Codex Workbench Legal Documents' },
-  [pscustomobject]@{ Path = 'privacy-policy.html'; En = 'Codex Workbench Privacy Policy' },
-  [pscustomobject]@{ Path = 'user-agreement.html'; En = 'Codex Workbench User Agreement' }
+  [pscustomobject]@{ Path = 'index.html'; En = 'CodeAI Workbench Legal Documents' },
+  [pscustomobject]@{ Path = 'privacy-policy.html'; En = 'CodeAI Workbench Privacy Policy' },
+  [pscustomobject]@{ Path = 'user-agreement.html'; En = 'CodeAI Workbench User Agreement' }
 )
 
 foreach ($page in $pages) {
